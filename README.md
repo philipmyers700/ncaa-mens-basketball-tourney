@@ -89,17 +89,15 @@ This report demonstrates the potential of a random forest regressor model to eff
 
 ### Alternative Predictions and Data Organization:
 
-**Predicting Total Points**: Instead of (or in addition to) predicting the point differential, train your model to predict the total combined score of each game. This could uncover different betting opportunities, especially in games with high or low over/under lines.
+**Predicting Total Points**: Instead of (or in addition to) predicting the point differential, train the model to predict the total combined score of each game. This could uncover different betting opportunities, especially in games with high or low over/under lines.
 
-**Seed-Based Subsets**: Analyze how your model performs on different seed matchups. For example, does it predict 1 vs. 16 games more accurately than 5 vs. 12 games? This could highlight specific matchups where your model excels.
+**Seed-Based Subsets**: Analyze how the model performs on different seed matchups. For example, does it predict 1 vs. 16 games more accurately than 5 vs. 12 games? This could highlight specific matchups where the model excels.
 
 **Conference-Specific Trends**: Explore whether incorporating conference data improves predictions. Do teams from certain conferences consistently over- or underperform in the tournament? This could provide a valuable edge.
 
 **Rolling Window Approach**: Experiment with a rolling window approach to model training. For example, train on 2023-2025 data to predict 2026, then on 2024-2026 to predict 2027, and so on. This helps capture evolving playing styles and trends.
 
-**Upset Prediction**: Specifically analyze how your model performs on predicting upsets (seeds 12-16 winning). Are there particular features that stand out in these games? This could lead to a specialized upset prediction model.
-
-**Advanced Metrics**: Incorporate advanced statistics like offensive/defensive efficiency, tempo, effective field goal percentage, and turnover rate. These provide a more nuanced picture of team performance.
+**Upset Prediction**: Specifically analyze how the model performs on predicting upsets (seeds 12-16 winning). Are there particular features that stand out in these games? This could lead to a specialized upset prediction model.
 
 **Player Data**: Include key player statistics or even advanced metrics like Player Efficiency Rating (PER) or Win Shares. Consider factors like injuries to key players.
 

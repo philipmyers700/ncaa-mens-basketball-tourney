@@ -71,16 +71,20 @@ An interesting pattern emerged in these results. When the Predicted Score exceed
         Loss     2
 
 
-Although the model was not trained using Round 2 data, the following results demonstrate how well it performed when applied to the 2025 Round 2 games. Impressively, the model correctly predicted 10 out of 16 winners (63%). The accuracy increased to 80% (5 out of 6) when the Predicted Score exceeded the Spread, and reached a perfect 100% (3 out of 3) when the Predicted Score was more than 2.5 points greater than the Spread.
+Although the model was not trained using Round 2 data, the following results demonstrate how well it performed when applied to the 2025 Round 2 games. Impressively, the model correctly predicted 10 out of 16 winners (63%). The accuracy increased to 80% (5 out of 6) when the Predicted Score exceeded the Spread, and reached a perfect 100% (3 out of 3) when the Predicted Score was more than 2.5 points greater than the Spread. Unfortunately, the model fails to successfully identify a betting advantage in Rounds 3 and 4 (results can be found in MLNCATourneyGames.ipynb). 
 
 [Model Applied to 2025 Round 2 Games](tableR2.md)
 
 ![Distribution of Predicted Score Minus Spread Separated by Win and Loss - Round 2](image-1.png)
 
 
+
+
 ## Conclusion
 
 This report demonstrates the potential of a random forest regressor model to effectively predict point differentials in NCAA Men's Basketball Tournament games, particularly in identifying instances where favored teams are likely to cover the spread. While further analysis across subsequent tournament rounds is necessary, the model's strong performance in the first round, achieving a 64% accuracy rate when predicting higher seeds to win by a margin exceeding the spread, suggests a promising avenue for identifying profitable betting opportunities. Future work will focus on refining the model's predictive power by incorporating additional variables, such as advanced team metrics and player-specific data, with the goal of building a comprehensive system for navigating the thrills and upsets of March Madness.
+
+
 
 
 ### Alternative Predictions and Data Organization:
@@ -91,13 +95,9 @@ This report demonstrates the potential of a random forest regressor model to eff
 
 **Conference-Specific Trends**: Explore whether incorporating conference data improves predictions. Do teams from certain conferences consistently over- or underperform in the tournament? This could provide a valuable edge.
 
-<u>Data Expansion and Model Refinement</u>
-
 **Rolling Window Approach**: Experiment with a rolling window approach to model training. For example, train on 2023-2025 data to predict 2026, then on 2024-2026 to predict 2027, and so on. This helps capture evolving playing styles and trends.
 
 **Upset Prediction**: Specifically analyze how your model performs on predicting upsets (seeds 12-16 winning). Are there particular features that stand out in these games? This could lead to a specialized upset prediction model.
-
-<u>Additional Data Points for Enhanced Prediction</u>
 
 **Advanced Metrics**: Incorporate advanced statistics like offensive/defensive efficiency, tempo, effective field goal percentage, and turnover rate. These provide a more nuanced picture of team performance.
 
